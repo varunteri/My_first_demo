@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project  default="run" name="ant demo file" basedir=".">
+
+<target name="run" depends="compile">
+<java classname="com.varun.ant.Demo">
+
+<classpath path="staging" />
+</java>
+</target>
+<target name="compile" >
+ <javac includeantruntime="false" srcdir="./src" destdir="E:\Opta_project\AntProject\staging" />
+</target>
+</project>
